@@ -1,0 +1,26 @@
+#layer{
+    position: absolute;
+    left: 0px;
+    width: 500px;
+    height: 300px;
+    background-color: bisque;
+
+}
+#sceneLayer{
+//background-color: aquamarine;
+    z-index: 0;
+}
+#loadingLayer{
+   // background-color:#ff00ff;
+    z-index: 2;
+}
+#tipLayer{
+  //  background-color:#ff0011;
+    z-index: 1;
+}
+.layers{
+    position: absolute;
+    left: 0px;
+    width: 500px;
+    height: 300px;
+}
