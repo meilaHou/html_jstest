@@ -1,0 +1,93 @@
+/*
+1.div 布局测试
+2.float clear属性测试
+3.overflow属性测试
+4.margin boarder padding 宽度设置;
+*/
+body{
+    font: 12px Tahoma;
+    margin: 0px;
+    text-align: center;
+    background: #ffffff;
+}
+.container{
+    width: 100%;
+}
+.header{
+    width: 800px;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 0px;
+    height: 100px;
+    background: #ffcc99;
+
+}
+.pagebody{
+    width: 800px;
+    margin: 0px auto;
+    height: 400px;
+    background: #ccff00;
+}
+.footer{
+    width: 800px;
+    margin: 0px auto;
+    height: 50px;
+    background: #00ffff;
+}
+#menu{
+    padding:20px 20px 0px 0px;
+}
+#menu ul{
+    list-style: none;
+    margin: 0px;
+    float: right;
+}
+#menu ul li{
+    float: left;
+    margin: 0px 10px;
+}
+.menuDiv{
+    width: 1px;
+    height: 10px;
+    background: #000;
+}
+#banner {
+    background:url("../images/banner.jpg") 0 1px no-repeat; /*加入背景图片*/
+    background-size: 730px 240px;
+    width:730px; /*设定层的宽度*/
+    margin:auto; /*层居中*/
+    height:240px; /*设定高度*/
+    border-bottom:5px solid #EFEFEF; /*画一条浅灰色实线*/
+    clear:both /*清除浮动*/
+}
+
+.pagebody {
+    width:730px; /*设定宽度*/
+    margin:8px auto; /*居中*/
+}
+.sidebar {
+    width:160px; /*设定宽度*/
+    text-align:left; /*文字左对齐*/
+    float:left; /*浮动居左*/
+    clear:left; /*不允许左侧存在浮动*/
+    overflow:hidden; /*超出宽度部分隐藏*/
+
+    border:1px solid #E00;
+    height:200px
+}
+.mainbody {
+    /*width:570px;*/
+    width: auto;
+    text-align:left;
+    /*float:right;*/ /*浮动居右*/
+    float: none;
+    clear:right; /*不允许右侧存在浮动*/
+    overflow:hidden;
+
+    border:1px solid #ff00ff;/*加入board后div 增加两个像素的宽度*/
+    height:200px
+}
+/*
+一排div中,最好剩余一个div,设定为相对的,宽auto,
+*/

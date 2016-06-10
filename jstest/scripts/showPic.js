@@ -2,18 +2,7 @@
  * Created by Administrator on 2016/5/31.
  */
 addLoadEvent(changepage);
-function addLoadEvent(func){
-    var onload = window.onload;
-    if(typeof window.onload !="function" ){
-        window.onload = func;
-    }else
-    {
-        window.onload = function () {
-            onload();
-            func();
-        }
-    }
-}
+
 
 function  changepage() {
     var picdiv = document.getElementById("picdiv");
@@ -55,3 +44,4 @@ var parent = targetElement.parentNode;
         parent.insertBefore(newElement,targetElement.nextSibling);
     }
 }
+

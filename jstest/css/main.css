@@ -23,8 +23,19 @@
     left: 0px;
     width: 500px;
     height: 100px;
+    display: none;
 }
 #pics{
     width:300px ;
     height:300px
+}
+table{
+    border: 2px;
+    color: black;
+}
+.firstTr{
+background-color: aliceblue;
+}
+.secondTr{
+    background-color: antiquewhite;
 }
